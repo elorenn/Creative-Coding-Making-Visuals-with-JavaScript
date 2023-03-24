@@ -3,3 +3,4 @@
 
 # Except for this file
 !.gitignore
+!/00
