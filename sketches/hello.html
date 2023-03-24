@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Coding: Making Visuals with JavaScript</title>
+  </head>
+  <body>
+    <canvas width="600" height="600"></canvas>
+
+    <script>
+      let canvas = document.querySelector("canvas");
+      let context = canvas.getContext("2d");
+
+      // big yellow rectangle
+      context.fillStyle = "yellow";
+      // context.fillRect(120, 120, 400, 400);
+
+      // big rectangle border
+      context.lineWidth = 4;
+      context.beginPath();
+      context.rect(60, 60, 400, 400);
+      // context.stroke();
+
+      // circle border
+      context.beginPath();
+      context.arc(300, 300, 100, 0, Math.PI * 2);
+      // context.stroke();
+
+      // grid of squares
+      const height = 60;
+      const width = 60;
+      const gap = 20;
+      let x, y;
+
+      for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 5; j++) {
+          x = 100 + (width + gap) * i;
+          y = 100 + (height + gap) * j;
+
+          context.beginPath();
+          context.rect(x, y, width, height);
+          context.stroke();
+
+          if (Math.random() > 0.5) {
+            context.beginPath();
+            context.rect(x + 8, y + 8, width - 16, height - 16);
+            context.stroke();
+            context.fillRect(x + 2, y + 2, width - 4, height - 4);
+            context.fillStyle = "black";
+            context.fillRect(x + 8, y + 8, width - 16, height - 16);
+          }
+          context.fillStyle = "yellow";
+        }
+      }
+
+      let multiply = (a, b) => {
+        return a * b;
+      };
+      console.log(multiply(2, 3));
+
+      let menu = ["starter", "main", "dessert", "drinks", "sides"];
+
+      for (let i = 0; i < menu.length; i++) {
+        console.log(i + ": " + menu[i]);
+      }
+
+      menu.forEach((item) => {
+        console.log(item);
+      });
+
+    </script>
+  </body>
+</html>
