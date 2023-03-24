@@ -11,8 +11,12 @@ const sketch = () => {
   return ({ context, width, height }) => {
     context.fillStyle = "white";
     context.fillRect(0, 0, width, height);
-    context.lineWidth = width * 0.005;
+    context.lineWidth = width * 0.0075;
     // context.strokeStyle = "white";
+
+    // big yellow rectangle
+    context.fillStyle = "yellow";
+    context.fillRect(width * 0.2, height * 0.2, width * 0.62, height * 0.62);
 
     // grid of squares
     const w = width * 0.1;
@@ -37,7 +41,6 @@ const sketch = () => {
           context.rect(x + off / 2, y + off / 2, w - off, h - off);
           context.stroke();
         }
-        context.fillStyle = "yellow";
       }
     }
   };
