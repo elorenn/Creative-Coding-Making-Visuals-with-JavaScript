@@ -10,4 +10,5 @@ Online course available at: [Creative Coding: Making Visuals with JavaScript](ht
 
 <p align="center">
   <img src="./sketches/output/00/sketch-02-green-circle.gif" alt="spinning circles of varying greens" width="45%">
+  <img src="./sketches/output/00/sketch-02-black-rays.gif" alt="rays around a circle of varying widths and lengths" width="45%">
 </p>
