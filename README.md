@@ -25,7 +25,7 @@ canvas-sketch file-name.js --output=[folder path]
 
 <p align="center">
   <img src="./sketches/output/00/01-sketch-square-yellow.png" alt="yellow square superimposed on grid of smaller squares" width="45%">
-  <img src="./sketches/output/00/01-sketch-square-black.png" alt="square made of grid of smaller squares" width="45%">
+  <img src="./sketches/output/00/01-sketch-square-black.gif" alt="square made of grid of smaller squares" width="45%">
 </p>
 
 ### [Sketch 02](./sketches/sketch-02.js)
