@@ -2,7 +2,7 @@
 
 Online course available at: [Creative Coding: Making Visuals with JavaScript](https://www.domestika.org/en/courses/2729-creative-coding-making-visuals-with-javascript)
 
-# Tools
+## Tool Stack
 
 - [canvas-sketch:](https://github.com/mattdesl/canvas-sketch) A framework for making generative artwork in JavaScript and the browser.
 - [canvas-sketch-util:](https://github.com/mattdesl/canvas-sketch-util) A library of utility functions for generative art in Canvas, WebGL and JavaScript, designed to be used alongside the canvas-sketch toolset, but generic enough to work for various Node.js/browser use cases.
