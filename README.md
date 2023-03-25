@@ -2,6 +2,8 @@
 
 Online course available at: [Creative Coding: Making Visuals with JavaScript](https://www.domestika.org/en/courses/2729-creative-coding-making-visuals-with-javascript)
 
+To launch browser, run in terminal: canvas-sketch file-name.js --open
+
 ## Tool Stack
 
 - [canvas-sketch:](https://github.com/mattdesl/canvas-sketch) A framework for making generative artwork in JavaScript and the browser.
@@ -10,8 +12,6 @@ Online course available at: [Creative Coding: Making Visuals with JavaScript](ht
 - [HTML Canvas Reference](https://www.w3schools.com/tags/ref_canvas.asp)
 - [npm v8.11.0](https://www.npmjs.com/package/npm/v/8.11.0)
 - [node v16.16.0](https://nodejs.org/en/blog/release/v16.16.0)
-
-- To launch browser, run in terminal: canvas-sketch file-name.js --open
 
 ## Sample Sketches
 
