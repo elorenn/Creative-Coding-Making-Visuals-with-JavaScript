@@ -2,7 +2,13 @@
 
 Online course available at: [Creative Coding: Making Visuals with JavaScript](https://www.domestika.org/en/courses/2729-creative-coding-making-visuals-with-javascript)
 
-To launch browser, run in terminal: canvas-sketch file-name.js --open
+```sh
+# To launch browser, run in terminal:
+canvas-sketch file-name.js --open
+
+#To assign output folder for screenshots:
+canvas-sketch file-name.js --output=[folder path]
+```
 
 ## Tool Stack
 
