@@ -58,7 +58,8 @@ const sketch = ({ context, width, height }) => {
     agents.forEach((agent) => {
       agent.update();
       agent.draw(context);
-      agent.bounce(width, height);
+      // agent.bounce(width, height);
+      agent.wrap(width, height);
     });
   };
 };
@@ -93,14 +94,31 @@ class Agent {
       ")";
   }
 
-  // bounce back when reach the boundaries of the canvas
-  // to prevent agents from dissappearing from the canvas overtime
+  /* bounce back when reach the boundaries of the canvas
+  to prevent agents from dissappearing from the canvas overtime */
   bounce(width, height) {
     if (this.pos.x <= 0 || this.pos.x >= width) {
       this.vel.x *= -1; // invert the velocity
     }
     if (this.pos.y <= 0 || this.pos.y >= height) {
       this.vel.y *= -1;
+    }
+  }
+
+  /* When the agent reaches one side of the canvas, 
+   it should wrap around and appear on the opposite side. */
+  wrap(width, height) {
+    if (this.pos.x > width) {
+      this.pos.x = 0;
+    }
+    if (this.pos.x < 0) {
+      this.pos.x = width;
+    }
+    if (this.pos.y > height) {
+      this.pos.y = 0;
+    }
+    if (this.pos.y < 0) {
+      this.pos.y = height;
     }
   }
 
