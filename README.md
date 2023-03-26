@@ -8,6 +8,18 @@ canvas-sketch file-name.js --open
 
 #To assign output folder for screenshots:
 canvas-sketch file-name.js --output=[folder path]
+
+# Cmd + Shift + S or Ctrl + Shift + S to export an animation, it will begin recording image frames and log progress in the browser console. You can hit this keystroke again to stop recording. First install ffmpeg to stream frames into an MP4 or GIF file:
+npm install @ffmpeg-installer/ffmpeg --global
+
+# Save animations to MP4 file
+canvas-sketch animation.js --output=tmp --stream
+
+# Save animations to GIF file instead
+canvas-sketch animation.js --output=tmp --stream=gif
+
+# Save animations to GIF but scale it down to 512 px wide
+canvas-sketch animation.js --output=tmp --stream [ gif --scale=512:-1 ]
 ```
 
 ## Tool Stack
