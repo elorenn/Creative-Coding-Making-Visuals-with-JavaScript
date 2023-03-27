@@ -46,3 +46,10 @@ canvas-sketch animation.js --output=tmp --stream [ gif --scale=512:-1 ]
   <img src="./sketches/output/00/02-sketch-green-circle.gif" alt="spinning circles of varying greens" width="45%">
   <img src="./sketches/output/00/02-sketch-black-rays.gif" alt="rays around a circle of varying widths and lengths" width="45%">
 </p>
+
+### [Sketch 03](./sketches/sketch-03.js)
+
+<p align="center">
+  <img src="./sketches/output/00/03-sketch-lines.gif" alt="dots moving attached via colorful lines" width="45%">
+  <img src="./sketches/output/00/03-sketch-wrap.gif" alt="dots moving attached via colorful lines" width="45%">
+</p>
